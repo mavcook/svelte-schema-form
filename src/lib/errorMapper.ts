@@ -26,7 +26,7 @@ export function errorMapper(schema: any, value: any, keywordLocation: string, in
 				date: "date",
 				email: "email address",
 			} as Record<string, string>;
-			return [ location, `Please enter a properly formatted ${valMap[keyValue]}` ];
+			return [ location, `Please enter a properly formatted ${keyValue} ${valMap[keyValue]}` ];
 	}
 	return [ location, `Fails to satisfy schema at ${jsonPointerToPath(keywordLocation)}` ];
 }
