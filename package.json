@@ -34,7 +34,8 @@
 		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"copyout": "xcopy /s /y src\\lib ..\\svelte-schema-form-script\\svelte-schema-form\\src\\lib"
+		"copyout": "xcopy /s /y src\\lib ..\\svelte-schema-form-script\\svelte-schema-form\\src\\lib",
+		"prepare": "npm run build"
 	},
 	"devDependencies": {
     	"@sveltejs/adapter-auto": "^2.0.1",
